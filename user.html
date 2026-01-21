@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>User Profile</h2>
+
+    <div id="viewMode"></div>
+
+    <button onclick="enableEdit()">Update Profile</button>
+    <button onclick="openModal()">Change Password</button>
+    <button onclick="logout()">Logout</button>
+
+    <!-- Password Modal -->
+    <div id="modal" style="display: none">
+      <input id="newPass" type="password" placeholder="New Password" />
+      <input id="confirmPass" type="password" placeholder="Confirm Password" />
+      <label> <input type="checkbox" id="confirmCheck" /> I confirm </label>
+      <button onclick="changePassword()">Update</button>
+    </div>
+
+    <script src="js/user.js"></script>
+  </body>
+</html>
